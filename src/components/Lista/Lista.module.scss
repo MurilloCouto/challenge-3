@@ -1,0 +1,98 @@
+@use "../../sass/variables.scss" as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+
+table {
+    width: min(100%, 685px);
+
+    tr {
+        display: grid;
+        grid-template-columns: 42.3357664% 37.5182482% auto;
+    }
+
+    th,
+    td {
+        padding: 0 10px 0 10px;
+    }
+
+    th {
+        color: $white;
+        border-bottom: 5px solid #d9d9d9;
+        border-collapse: collapse;
+        padding-bottom: 40px;
+        margin-bottom: 18px;
+    }
+
+    td {
+        margin-top: 15px;
+        color: $white;
+    }
+
+    .tarefasTop {
+        display: inline-block;
+        text-align: left;
+        font-size: 30px;
+        font-family: Raleway;
+        font-weight: 600;
+    }
+
+    .statusTop {
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        font-family: Raleway;
+        font-weight: 600;
+    }
+
+    .optionsTop {
+        display: inline-block;
+        text-align: right;
+        font-size: 30px;
+        font-family: Raleway;
+        font-weight: 600;
+    }
+
+    .tarefas {
+        display: inline-block;
+        text-align: left;
+        font-size: 25px;
+        font-family: Raleway;
+        font-weight: 400;
+
+    }
+
+    .status {
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        font-family: Raleway;
+        font-weight: 400;
+    }
+
+    .options {
+        display: inline-block;
+        text-align: right;
+        font-size: 25px;
+        font-family: Raleway;
+        font-weight: 400;
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    svg:hover {
+        
+        cursor: pointer;
+
+    }
+
+    input[type="checkbox"]:checked~svg {
+        color: $sec-color;
+    }
+}
