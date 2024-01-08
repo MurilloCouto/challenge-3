@@ -5,12 +5,13 @@ import { AiOutlinePlusSquare } from "react-icons/ai";
 
 const ListaForm = ({ formHandler, listLength }) => {
   const [tarefa, setTarefa] = useState(null);
+  const [category, setCategory] = useState("");
 
   const elementCreate = (value) => {
     const novaTarefa = {
       id: listLength + 1,
       title: value,
-      description: "Adicione uma descrição...",
+      category: category,
       completed: false,
     };
 
@@ -36,6 +37,18 @@ const ListaForm = ({ formHandler, listLength }) => {
           onChange={(event) => setTarefa(event.target.value)}
           required
         />
+        <select
+          className={styles.select}
+          onChange={(event) => setCategory(event.target.value)}
+          value={category}
+        >
+          <option value="">Selecione uma categoria</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Tarefa doméstica">Tarefa doméstica</option>
+          <option value="Trabalho">Trabalho</option>
+          <option value="Estudos">Estudos</option>
+        </select>
+
         <button>
           <AiOutlinePlusSquare color="white" size={35} />
         </button>

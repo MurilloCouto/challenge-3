@@ -57,6 +57,7 @@ const Lista = ({ data }) => {
         <thead>
           <tr>
             <th className={styles.tarefasTop}>Tarefa</th>
+            <th className={styles.tarefasTop}>Categoria</th>
             <th className={styles.statusTop}>Status</th>
             <th className={styles.optionsTop}>Opções</th>
           </tr>
@@ -66,6 +67,7 @@ const Lista = ({ data }) => {
             return (
               <tr key={item.id + index}>
                 <td className={styles.tarefas}>{item.title}</td>
+                <td className={styles.categoria}>{item.category}</td>
                 <td className={styles.status}>
                   <label
                     onChange={(event) => {
