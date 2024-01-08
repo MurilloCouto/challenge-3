@@ -5,7 +5,7 @@ import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 
 import styles from "./Lista.module.scss";
-import ListaForm from "../listaForm/ListaForm";
+import ListaForm from "../ListaForm/ListaForm";
 import Modal from "../Modal/Modal";
 
 const Lista = ({ data }) => {
