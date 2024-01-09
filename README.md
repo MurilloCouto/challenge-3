@@ -16,13 +16,20 @@
 
 - Node.js (v14.0.0 ou superior)
 - NPM (v6.0.0 ou superior)
-- Outras dependências específicas...
+- React (v18.2.0)
+- React-dom (v18.2.0)
+- React-icons (v4.12.0)
+- React-router-dom (v6.20.1)
+- Sass (v1.69.5)
+- Vite (v5.0.0)
+  
 ## Linguagens e Tecnologias
 
 - JavaScript (ES6+)
 - React
 - JSX
 - SCSS
+  
 ## Funcionalidades
 
 - Adição de tarefas personalizadas (Versão 1.0)
@@ -36,8 +43,12 @@
 - Na Versão 1.0 a aplicação traz somente as funcionalidade de ediçao de tarefas, adição e remoção das mesmas, além de toda a formatação visual da página feita em html e scss.
 
 - Na Versão 2.0 (a mais atual) foi implementada a função de seleção de categorias de cada tarefa, e assim deixá-las de forma mais organizada e específica.
+
+  
 ## Link do site 
 - https://challenge-3-hazel.vercel.app/
+
+  
 ## Melhorias
 
 Acredito que seria legal a interação com um back end que possa gravar permanentemente essas tarefas.
